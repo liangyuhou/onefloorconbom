@@ -1,0 +1,148 @@
+/* ShoppingCart.css */
+
+.shopping-cart {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    width: 100%; /* 添加此行 */
+  }
+  .product-details-w {
+    flex: 1; /* 自動拉伸以填滿剩餘空間 */
+}
+  .product-details span {
+    font-size: 12px;
+    color: #333;
+  }
+  .product-details-r{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+  }
+  
+  button {
+    margin-top: 80px;
+    cursor: pointer;
+    color: #4b4a4a;
+    font-size: 12px;
+  }
+  
+  button:hover {
+    color: #000000;
+  }
+  
+  .cart {
+    margin-top: 20px;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .cart p {
+    font-size: 18px;
+    color: #333;
+    text-align: right;
+  }
+
+  .cart img {
+   width: 150px;
+   margin-right: 10px;
+  }
+
+
+  .progress{
+    margin-top: 110px;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between;
+    width: 800px; /* 假設容器寬度為 800 像素 */
+    margin: 110px auto 0;
+    color: #333;
+    letter-spacing: 3px;
+  }
+  .progress-step.active {
+    color: rgb(0, 0, 0); /* 設置文字顏色 */
+    font-weight: bold; /* 加粗字體 */
+    position: relative; /* 設置相對定位 */
+}
+.progress-step.active::after {
+    content: ''; /* 添加偽元素的內容 */
+    position: absolute; /* 設置絕對定位 */
+    bottom: -2px; /* 距離底部的距離 */
+    left: 0; /* 距離左邊的距離 */
+    width: 100%; /* 橫線的寬度 */
+    height: 2px; /* 橫線的高度 */
+    background-color: rgb(0, 0, 0); /* 橫線的顏色 */
+}
+
+.horizontal-line {
+    border-top: 2px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cart-price {
+    display: flex;
+    justify-content: space-between; /* 將內容分佈到容器的兩端 */
+    align-items: center; /* 垂直居中對齊 */
+}
+
+.cart-price-title {
+    flex: 1; /* 使標題佔據左側空間 */
+}
+
+.cart-price-value {
+    margin-left: auto; /* 將總價格置於容器的最右側 */
+}
+
+.cart-price-t {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* 將內容分佈到容器的兩端 */
+    align-items: center; /* 垂直居中對齊 */
+}
+
+.cart-price-title-t {
+    flex: 1; /* 使標題佔據左側空間 */
+    font-size: 24px ;
+}
+
+.cart-price-value-t {
+    font-weight: bold; /* 加粗字體 */
+    margin-left: auto; /* 將總價格置於容器的最右側 */
+}
+
+.checkout-button {
+    background-color: #020e1c; /* 背景顏色 */
+    color: #fff; /* 文字顏色 */
+    padding: 10px 20px; /* 內邊距 */
+    border: none; /* 移除邊框 */
+    cursor: pointer; /* 指示光標 */
+    display: flex;
+    width: 560px;
+    justify-content: center; /* 將內容水平置中 */
+    align-items: center; /* 將內容垂直置中 */
+  
+}
+
+.checkout-button:hover {
+    background-color: #000000; /* 滑鼠懸停時的背景顏色 */
+    color: #fff; /* 文字顏色 */
+}

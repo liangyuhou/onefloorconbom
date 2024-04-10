@@ -1,0 +1,190 @@
+/* 商品容器样式 */
+.product-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 80px;
+    margin-top: 110px;
+}
+
+/* 图片容器样式 */
+.image-container {
+    margin-right: 20px;
+    max-width: 600px;
+}
+
+/* 主要图片样式 */
+.main-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+/* 缩略图样式 */
+.thumbnails {
+    display: flex;
+    justify-content: flex-start; /* 将缩略图水平居中 */
+    margin-bottom: 10px;
+}
+
+.thumbnails img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+/* 商品信息样式 */
+.product-info {
+    margin-left: 20px;
+    flex: 1;
+}
+
+/* 产品名称样式 */
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 分隔线样式 */
+.divider {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* 商品描述样式 */
+.description {
+    margin-bottom: 10px;
+}
+
+/* 颜色样式 */
+.color-title{
+    margin-top: 20px;
+}
+.colors {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.color {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 数量选择样式 */
+
+.quantity-button {
+    padding: 5px 10px;
+    border: 1px  #ccc;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.quantity-add-to-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; /* 防止容器在需要时收缩 */
+}
+
+.quantity-selection {
+    margin-bottom: 15px; /* 添加额外的底部间距 */
+    margin-top: 10px;
+}
+
+/* 添加到购物车按钮样式 */
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 200px;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* 价格样式 */
+.price-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.price-value{
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* 尺寸下拉框样式 */
+.size-dropdown {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.size-dropdown label {
+    display: block;
+}
+
+.size-dropdown select {
+    padding: 5px;
+    width: 200px;
+}
+.quantity-button {
+    border-radius: 50%; /* 将按钮设为圆形 */
+    width: 50px; /* 设置按钮宽度 */
+    height: 50px; /* 设置按钮高度 */
+    margin: 0 20px; /* 设置按钮与数量之间的间距 */
+    border: 1px solid #ccc; /* 添加边框 */
+    background-color: #fff; /* 设置背景颜色 */
+    cursor: pointer; /* 鼠标指针样式 */
+    margin-top: 30px;
+}
+
+.quantity-button:hover {
+    background-color: #f0f0f0; /* 鼠标悬停时背景颜色 */
+}
+
+
+/* 尺寸表样式 */
+.size-chart {
+    margin-top: 20px;
+}
+
+/* 注意事项样式 */
+.notes {
+    margin-top: 20px;
+}
+
+/* 整体布局样式 */
+@media only screen and (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-right: 0;
+    }
+
+    .thumbnails {
+        justify-content: flex-start;
+    }
+
+    .thumbnails img {
+        max-width: 40px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}

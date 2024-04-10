@@ -1,0 +1,38 @@
+.product-gallery {
+    display:block;
+    flex-direction: column; /* 设置为纵向排列 */
+    align-items: flex-start; /* 顶端对齐 */
+}
+
+.product-gallery img {
+    width: 100%; /* 图片宽度占满整个页面 */
+    height: auto; /* 让高度自适应 */
+}
+
+.image-caption {
+    position: absolute; /* 絕對定位 */
+    margin-top: -75% ; /* 將文字置於圖片的上方 */
+    left: 50%; /* 將文字水平置中 */
+    transform: translateX(-50%); /* 水平居中 */
+    color: rgba(255, 255, 255, 0.8); /* 背景顏色 */
+    padding: 5px; /* 內邊距 */
+    z-index: 1; /* 確保文字位於圖片上方 */
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center; /* 將文字內容水平置中對齊 */
+    
+}
+
+@media screen and (max-width: 850px) {
+    .image-caption {
+    position: absolute; /* 絕對定位 */
+    margin-top: -17% ; /* 將文字置於圖片的上方 */
+    left: 50%; /* 將文字水平置中 */
+    transform: translateX(-50%); /* 水平居中 */
+    color: rgba(255, 255, 255, 0.8); /* 背景顏色 */
+    padding: 5px; /* 內邊距 */
+    z-index: 1; /* 確保文字位於圖片上方 */
+    font-size: small;
+    text-align: center; /* 將文字內容水平置中對齊 */
+}
+}
